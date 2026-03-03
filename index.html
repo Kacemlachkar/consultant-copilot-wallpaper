@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultant Copilot Wallpaper</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-group">
+                    <img src="assests/logos/Talan_Logo.png" alt="Talan" class="logo talan-logo">
+                    <div class="logo-divider"></div>
+                    <img src="assests/logos/business-central-logo-.png" alt="Business Central" class="logo bc-logo">
+                    <img src="assests/logos/Power Platform.png" alt="Power Platform" class="logo pp-logo">
+                    <img src="assests/logos/Logo Power Bi.png" alt="Power BI" class="logo pbi-logo">
+                </div>
+                <h1 class="header-title">Consultant Copilot</h1>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-wrapper">
+            <!-- Left Sidebar -->
+            <aside class="sidebar">
+                <nav class="sidebar-nav">
+                    <button class="nav-item active" data-section="business-central">
+                        <span class="nav-label">Business Central (AL)</span>
+                    </button>
+                    <button class="nav-item" data-section="power-apps">
+                        <span class="nav-label">Power Apps</span>
+                    </button>
+                    <button class="nav-item" data-section="power-automate">
+                        <span class="nav-label">Power Automate</span>
+                    </button>
+                    <button class="nav-item" data-section="power-bi">
+                        <span class="nav-label">Power BI</span>
+                    </button>
+                    <button class="nav-item" data-section="tips">
+                        <span class="nav-label">Consultant Tips</span>
+                    </button>
+                </nav>
+            </aside>
+
+            <!-- Main Panel -->
+            <main class="main-panel">
+                <div class="content-area">
+                    <!-- Content sections will be dynamically loaded here -->
+                    <div id="content" class="content-placeholder"></div>
+                </div>
+
+                <!-- Copilot Input Area -->
+                <div class="copilot-section">
+                    <button class="copilot-toggle" id="copilotToggle">
+                        <span class="toggle-label">Ask Copilot</span>
+                        <span class="toggle-icon">▼</span>
+                    </button>
+                    <div class="copilot-panel" id="copilotPanel" style="display: none;">
+                        <textarea
+                            id="copilotInput"
+                            class="copilot-input"
+                            placeholder="Ask a question about Business Central, Power Apps, Power Automate, or Power BI..."
+                            rows="3"
+                        ></textarea>
+                        <button class="copilot-submit" id="copilotSubmit">Get Guidance</button>
+                        <div class="copilot-response" id="copilotResponse"></div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
